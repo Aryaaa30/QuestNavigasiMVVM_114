@@ -45,7 +45,7 @@ fun TampilMahasiswaView(
             isinya = mhs.alamat
         )
         Button(
-            onClick = {navHost},
+            onClick = {navHostController.popBackStack()},
             modifier = Modifier.padding(top = 16.dp)
         ) {
             Text("Back")

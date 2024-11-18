@@ -11,12 +11,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.example.session7_mvvmandnavigation.model.Mahasiswa
 
 @Composable
 fun TampilMahasiswaView(
     mhs: Mahasiswa,
-    onClickButton: Any?
+    navHostController: NavHostController
 ){
     Column (modifier = Modifier.fillMaxSize()){
         TampilData(
@@ -44,7 +45,7 @@ fun TampilMahasiswaView(
             isinya = mhs.alamat
         )
         Button(
-            onClick = {onClickButton},
+            onClick = {navHost},
             modifier = Modifier.padding(top = 16.dp)
         ) {
             Text("Back")

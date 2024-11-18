@@ -6,5 +6,6 @@ data class Mahasiswa(
     val nim : String ="",
     val gender : String ="",
     val email : String ="",
+    val noHp : String ="",
     val alamat : String ="",
 )
